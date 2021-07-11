@@ -8,6 +8,8 @@
 #include <Blinker.h>
 #include "config.inc"
 
+static IRsend irsend(kIrLed);  // Set the GPIO to be used to sending the message.
+
 BlinkerButton SwitchLight("switch-light");
 
 int counter = 0;
